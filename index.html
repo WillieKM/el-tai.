@@ -1,216 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medical Transportation Everett WA | El Tai Transport</title>
 
-<title>El Tai Transport Services | Medical Transportation WA</title>
+<meta name="description" content="Reliable wheelchair accessible medical transportation in Everett WA.">
 
-<meta name="description" content="Wheelchair accessible medical transportation serving Snohomish, King and Pierce Counties.">
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-*{box-sizing:border-box}
-
-body{
-font-family:'Inter',sans-serif;
-margin:0;
-background:#f6fbfb;
-color:#1f2937;
-}
-
-/* HEADER */
-
-header{
-background:#0f766e;
-color:white;
-padding:18px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:600;
-}
-
-/* HERO */
-
-.hero{
-
-background:
-linear-gradient(rgba(15,118,110,0.8),rgba(20,184,166,0.8)),
-url("https://images.unsplash.com/photo-1580281657527-47b0f7a6e3f6");
-
-background-size:cover;
-background-position:center;
-
-color:white;
-padding:140px 20px;
-text-align:center;
-
-}
-
-.hero h1{
-font-size:44px;
-margin-bottom:10px;
-}
-
-/* BUTTONS */
-
-.btn{
-background:white;
-color:#0f766e;
-padding:12px 24px;
-border-radius:6px;
-text-decoration:none;
-font-weight:600;
-margin:6px;
-display:inline-block;
-}
-
-/* SECTIONS */
-
-.section{
-padding:70px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-.section h2{
-text-align:center;
-margin-bottom:40px;
-}
-
-/* GRID */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-gap:22px;
-}
-
-.card{
-background:white;
-padding:24px;
-border-radius:8px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-}
-
-/* FLEET */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-border-radius:8px;
-}
-
-/* FORMS */
-
-form{
-display:grid;
-gap:12px;
-max-width:520px;
-}
-
-input,textarea,select{
-padding:12px;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-button{
-background:#0f766e;
-color:white;
-border:none;
-padding:14px;
-border-radius:6px;
-cursor:pointer;
-}
-
-/* FOOTER */
-
-footer{
-background:#111;
-color:white;
-padding:30px;
-text-align:center;
-margin-top:40px;
-}
-
-.credit{
-font-size:11px;
-opacity:0.7;
-margin-top:10px;
-}
-
-/* FLOATING BAR */
-
-.floating-bar{
-
-position:fixed;
-bottom:0;
-width:100%;
-background:#0f766e;
-display:flex;
-justify-content:center;
-gap:20px;
-padding:12px;
-z-index:999;
-
-}
-
-.call-btn{
-
-background:white;
-color:#0f766e;
-padding:12px 20px;
-border-radius:6px;
-text-decoration:none;
-font-weight:bold;
-
-}
-
-.book-btn{
-
-background:#14b8a6;
-color:white;
-padding:12px 20px;
-border-radius:6px;
-text-decoration:none;
-font-weight:bold;
-
-}
-
-</style>
-
-<script>
-
-function estimateQuote(){
-
-let miles=document.getElementById("miles").value
-
-if(!miles){return}
-
-let price=(miles*3)+25
-
-document.getElementById("quoteResult").innerText="Estimated Cost: $"+price
-
-}
-
-</script>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -222,10 +19,7 @@ document.getElementById("quoteResult").innerText="Estimated Cost: $"+price
 
 <nav>
 
-<a href="#services">Services</a>
-<a href="#fleet">Fleet</a>
-<a href="#areas">Service Areas</a>
-<a href="#booking">Book Ride</a>
+<a href="index.html">Home</a>
 
 </nav>
 
@@ -233,177 +27,21 @@ document.getElementById("quoteResult").innerText="Estimated Cost: $"+price
 
 <section class="hero">
 
-<h1>Reliable Medical Transportation</h1>
-
-<p>Serving Snohomish County • King County • Pierce County</p>
-
-<a class="btn" href="#booking">Book Transportation</a>
-
-</section>
-
-<section class="section" id="services">
-
-<h2>Transportation Services</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>Wheelchair Transportation</h3>
-<p>ADA wheelchair accessible vans for safe patient transport.</p>
-</div>
-
-<div class="card">
-<h3>Dialysis Transportation</h3>
-<p>Reliable rides to dialysis centers and clinics.</p>
-</div>
-
-<div class="card">
-<h3>Hospital Discharge</h3>
-<p>Safe transportation home after hospital stays.</p>
-</div>
-
-<div class="card">
-<h3>Senior Transportation</h3>
-<p>Helping seniors attend medical appointments safely.</p>
-</div>
-
-</div>
+<h1>Medical Transportation in Everett WA</h1>
 
 </section>
 
 <section class="section">
 
-<h2>How Transportation Works</h2>
+<p>
 
-<div class="grid">
+El Tai Transport Services provides safe and reliable
+non emergency medical transportation in Everett Washington.
 
-<div class="card">
-<h3>1. Request Ride</h3>
-<p>Call or submit a ride request online.</p>
-</div>
+Our wheelchair accessible vans transport patients to hospitals,
+dialysis centers and medical appointments.
 
-<div class="card">
-<h3>2. Confirm Details</h3>
-<p>We confirm pickup location and appointment time.</p>
-</div>
-
-<div class="card">
-<h3>3. Safe Pickup</h3>
-<p>Driver arrives with wheelchair accessible vehicle.</p>
-</div>
-
-<div class="card">
-<h3>4. Comfortable Ride</h3>
-<p>Passenger is transported safely to destination.</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section" id="fleet">
-
-<h2>Wheelchair Accessible Fleet</h2>
-
-<div class="gallery">
-
-<img src="https://images.unsplash.com/photo-1585435557343-3b092031a831">
-
-<img src="https://images.unsplash.com/photo-1576765607924-3f7f2c7e1f2f">
-
-<img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528">
-
-<img src="https://images.unsplash.com/photo-1558980664-10c2369b9b1d">
-
-</div>
-
-</section>
-
-<section class="section" id="areas">
-
-<h2>Service Areas</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Snohomish County</h3>
-
-Everett  
-Lynnwood  
-Marysville  
-Edmonds  
-
-</div>
-
-<div class="card">
-
-<h3>King County</h3>
-
-Seattle  
-Bellevue  
-Kent  
-Renton  
-
-</div>
-
-<div class="card">
-
-<h3>Pierce County</h3>
-
-Tacoma  
-Lakewood  
-Puyallup  
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Trip Cost Estimate</h2>
-
-<input id="miles" type="number" placeholder="Enter trip miles">
-
-<br><br>
-
-<button onclick="estimateQuote()">Calculate</button>
-
-<p id="quoteResult"></p>
-
-</section>
-
-<section class="section" id="booking">
-
-<h2>Request Transportation</h2>
-
-<form>
-
-<input type="text" placeholder="Full Name">
-
-<input type="tel" placeholder="Phone Number">
-
-<input type="text" placeholder="Pickup Address">
-
-<input type="text" placeholder="Destination">
-
-<input type="date">
-
-<select>
-
-<option>Wheelchair Needed?</option>
-<option>Yes</option>
-<option>No</option>
-
-</select>
-
-<textarea placeholder="Additional notes"></textarea>
-
-<button type="submit">Submit Ride Request</button>
-
-</form>
+</p>
 
 </section>
 
@@ -411,23 +49,7 @@ Puyallup
 
 <p>© 2026 El Tai Transport Services</p>
 
-<p>Wheelchair & Non-Emergency Medical Transportation Washington</p>
-
-<div class="credit">
-
-website created by cyber-node.com
-
-</div>
-
 </footer>
-
-<div class="floating-bar">
-
-<a href="tel:1234567890" class="call-btn">Call Now</a>
-
-<a href="#booking" class="book-btn">Book Ride</a>
-
-</div>
 
 </body>
 
