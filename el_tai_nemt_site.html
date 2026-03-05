@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Tai Transport Services | Snohomish County Medical Transportation</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;margin:0;color:#333}
+header{background:#0a4fa3;color:#fff;padding:20px}
+nav a{color:white;margin-right:20px;text-decoration:none;font-weight:bold}
+.hero{padding:80px 20px;background:#e9f2ff;text-align:center}
+.hero h1{font-size:40px;margin-bottom:10px}
+.btn{background:#0a4fa3;color:#fff;padding:12px 22px;border-radius:6px;text-decoration:none;display:inline-block;margin:10px}
+.section{padding:60px 20px;max-width:1100px;margin:auto}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{border:1px solid #ddd;padding:20px;border-radius:8px}
+.cities{columns:2}
+form{display:grid;gap:10px;max-width:500px}
+input,textarea,select{padding:10px;border:1px solid #ccc;border-radius:4px}
+footer{background:#111;color:#fff;padding:30px;text-align:center;margin-top:40px}
+</style>
+</head>
+<body>
+
+<header>
+<h2>El Tai Transport Services</h2>
+<nav>
+<a href="#services">Services</a>
+<a href="#areas">Service Areas</a>
+<a href="#booking">Book Ride</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Reliable Medical Transportation in Snohomish County</h1>
+<p>Wheelchair accessible non‑emergency medical transportation for patients and seniors.</p>
+<a class="btn" href="#booking">Book Transportation</a>
+<a class="btn" href="tel:1234567890">Call Now</a>
+</section>
+
+<section class="section" id="services">
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">
+<h3>Wheelchair Transportation</h3>
+<p>Safe ADA wheelchair accessible transportation using professional medical transport vans.</p>
+</div>
+<div class="card">
+<h3>Medical Appointments</h3>
+<p>Transportation to hospitals, clinics, dialysis centers, and therapy appointments.</p>
+</div>
+<div class="card">
+<h3>Hospital Discharge</h3>
+<p>Reliable transport home after hospital stays or medical procedures.</p>
+</div>
+<div class="card">
+<h3>Senior Transportation</h3>
+<p>Helping seniors travel safely to appointments and important destinations.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="areas">
+<h2>Snohomish County Service Areas</h2>
+<div class="cities">
+<p>Everett</p>
+<p>Lynnwood</p>
+<p>Edmonds</p>
+<p>Marysville</p>
+<p>Mukilteo</p>
+<p>Lake Stevens</p>
+<p>Mill Creek</p>
+<p>Monroe</p>
+<p>Snohomish</p>
+<p>Bothell</p>
+</div>
+</section>
+
+<section class="section" id="booking">
+<h2>Request Transportation</h2>
+<form action="https://formspree.io/f/yourformid" method="POST">
+<input type="text" name="name" placeholder="Name" required>
+<input type="tel" name="phone" placeholder="Phone" required>
+<input type="text" name="pickup" placeholder="Pickup Address" required>
+<input type="text" name="destination" placeholder="Destination" required>
+<input type="date" name="date" required>
+<select name="wheelchair">
+<option>Wheelchair Needed?</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+<textarea name="notes" placeholder="Additional Notes"></textarea>
+<button class="btn" type="submit">Request Ride</button>
+</form>
+</section>
+
+<section class="section" id="contact">
+<h2>Contact</h2>
+<p>Phone: (123) 456‑7890</p>
+<p>Email: info@eltaitransportservices.com</p>
+<p>Serving Snohomish County, Washington</p>
+</section>
+
+<footer>
+<p>© 2026 El Tai Transport Services | Snohomish County Medical Transportation</p>
+</footer>
+
+</body>
+</html>
