@@ -1,305 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Tai Transport Services | Wheelchair & Medical Transportation WA</title>
+<meta name="description" content="Wheelchair accessible non‑emergency medical transportation serving Snohomish, King and Pierce Counties Washington.">
 
-<title>El Tai Transport Services | Medical Transportation WA</title>
-
-<meta name="description" content="Wheelchair accessible non emergency medical transportation serving Snohomish County, King County and Pierce County Washington.">
+<!-- SEO Schema -->
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"MedicalTransportation",
+"name":"El Tai Transport Services",
+"areaServed":["Snohomish County WA","King County WA","Pierce County WA"],
+"serviceType":"Non Emergency Medical Transportation",
+"url":"https://el-tai.vercel.app"
+}
+</script>
 
 <style>
-
-body{
-font-family:Arial,Helvetica,sans-serif;
-margin:0;
-background:#f4f7fb;
-color:#333;
-}
-
-header{
-background:#0a4fa3;
-color:white;
-padding:18px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-nav a{
-color:white;
-margin-left:20px;
-text-decoration:none;
-font-weight:bold;
-}
-
-.hero{
-background:linear-gradient(120deg,#0a4fa3,#2f7de1);
-color:white;
-padding:120px 20px;
-text-align:center;
-}
-
-.hero h1{
-font-size:42px;
-margin-bottom:10px;
-}
-
-.btn{
-background:white;
-color:#0a4fa3;
-padding:12px 24px;
-border-radius:6px;
-text-decoration:none;
-margin:6px;
-display:inline-block;
-font-weight:bold;
-}
-
-.section{
-padding:70px 20px;
-max-width:1100px;
-margin:auto;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:8px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
-}
-
-.map{
-width:100%;
-height:400px;
-border:0;
-border-radius:8px;
-}
-
-form{
-display:grid;
-gap:12px;
-max-width:500px;
-}
-
-input,textarea,select{
-padding:12px;
-border:1px solid #ccc;
-border-radius:5px;
-}
-
-button{
-background:#0a4fa3;
-color:white;
-border:none;
-padding:14px;
-border-radius:6px;
-cursor:pointer;
-}
-
-footer{
-background:#111;
-color:white;
-padding:30px;
-text-align:center;
-margin-top:40px;
-}
-
+body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#f4f7fb;color:#1f2937}
+header{background:#0a4fa3;color:#fff;padding:18px 40px;display:flex;justify-content:space-between;align-items:center}
+nav a{color:#fff;margin-left:18px;text-decoration:none;font-weight:bold}
+.hero{background:linear-gradient(120deg,#0a4fa3,#2f7de1);color:#fff;padding:110px 20px;text-align:center}
+.hero h1{font-size:42px;margin-bottom:10px}
+.btn{background:#fff;color:#0a4fa3;padding:12px 22px;border-radius:6px;text-decoration:none;margin:6px;display:inline-block;font-weight:bold}
+.section{padding:70px 20px;max-width:1100px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:#fff;padding:24px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
+.map{width:100%;height:400px;border:0;border-radius:8px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.gallery img{width:100%;border-radius:8px}
+.review{background:#fff;padding:20px;border-radius:6px;margin-bottom:12px;box-shadow:0 3px 10px rgba(0,0,0,0.06)}
+form{display:grid;gap:12px;max-width:520px}
+input,textarea,select{padding:12px;border:1px solid #ccc;border-radius:5px}
+button{background:#0a4fa3;color:#fff;border:none;padding:14px;border-radius:6px;cursor:pointer}
+.quote-box{background:#fff;padding:24px;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.07)}
+footer{background:#111;color:#fff;padding:30px;text-align:center;margin-top:40px}
 </style>
 
-</head>
+<script>
+function estimateQuote(){
+let miles=document.getElementById('miles').value
+if(!miles){return}
+let estimate=(miles*3)+25
+let result=document.getElementById('quoteResult')
+result.innerText="Estimated Trip Cost: $"+estimate
+}
+</script>
 
+</head>
 <body>
 
 <header>
-
 <h2>El Tai Transport</h2>
-
 <nav>
-
 <a href="#services">Services</a>
+<a href="#fleet">Fleet</a>
 <a href="#areas">Service Areas</a>
+<a href="#reviews">Reviews</a>
 <a href="#booking">Book Ride</a>
-<a href="#contact">Contact</a>
-
 </nav>
-
 </header>
 
 <section class="hero">
-
 <h1>Reliable Medical Transportation</h1>
-
 <p>Serving Snohomish County • King County • Pierce County</p>
-
 <a class="btn" href="#booking">Book Transportation</a>
 <a class="btn" href="tel:1234567890">Call Now</a>
-
 </section>
 
 <section class="section" id="services">
-
 <h2>Transportation Services</h2>
-
 <div class="grid">
-
-<div class="card">
-
-<h3>Wheelchair Transportation</h3>
-
-<p>Safe wheelchair accessible transportation using ADA compliant vans.</p>
-
+<div class="card"><h3>Wheelchair Transportation</h3><p>ADA wheelchair accessible vans providing safe and reliable patient transportation.</p></div>
+<div class="card"><h3>Dialysis Transportation</h3><p>Reliable recurring transportation for dialysis appointments.</p></div>
+<div class="card"><h3>Hospital Discharge</h3><p>Transportation home after hospital stays and medical procedures.</p></div>
+<div class="card"><h3>Senior Transportation</h3><p>Helping seniors safely attend medical appointments and therapy visits.</p></div>
 </div>
+</section>
 
-<div class="card">
-
-<h3>Dialysis Transportation</h3>
-
-<p>Reliable recurring transportation for dialysis patients.</p>
-
+<section class="section" id="fleet">
+<h2>Wheelchair Accessible Fleet</h2>
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1585435557343-3b092031a831">
+<img src="https://images.unsplash.com/photo-1576765607924-3f7f2c7e1f2f">
+<img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528">
 </div>
-
-<div class="card">
-
-<h3>Hospital Discharge</h3>
-
-<p>Transportation home after hospital stays and medical procedures.</p>
-
-</div>
-
-<div class="card">
-
-<h3>Senior Transportation</h3>
-
-<p>Helping seniors safely attend medical appointments and therapy visits.</p>
-
-</div>
-
-</div>
-
 </section>
 
 <section class="section" id="areas">
-
 <h2>Service Areas</h2>
-
 <div class="grid">
-
-<div class="card">
-
-<h3>Snohomish County</h3>
-
-<p>
-Everett<br>
-Lynnwood<br>
-Marysville<br>
-Edmonds<br>
-Mukilteo<br>
-Lake Stevens<br>
-Mill Creek<br>
-Monroe
-</p>
-
+<div class="card"><h3>Snohomish County</h3><p>Everett<br>Lynnwood<br>Marysville<br>Edmonds<br>Mukilteo<br>Lake Stevens<br>Mill Creek<br>Monroe</p></div>
+<div class="card"><h3>King County</h3><p>Seattle<br>Bellevue<br>Kent<br>Auburn<br>Renton<br>Federal Way</p></div>
+<div class="card"><h3>Pierce County</h3><p>Tacoma<br>Lakewood<br>Puyallup</p></div>
 </div>
-
-<div class="card">
-
-<h3>King County</h3>
-
-<p>
-Seattle<br>
-Bellevue<br>
-Kent<br>
-Renton<br>
-Auburn<br>
-Federal Way
-</p>
-
-</div>
-
-<div class="card">
-
-<h3>Pierce County</h3>
-
-<p>
-Tacoma<br>
-Lakewood<br>
-Puyallup
-</p>
-
-</div>
-
-</div>
-
 </section>
 
 <section class="section">
-
 <h2>Service Area Map</h2>
+<iframe class="map" src="https://maps.google.com/maps?q=western%20washington&t=&z=8&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
 
-<iframe class="map"
-src="https://maps.google.com/maps?q=western%20washington&t=&z=8&ie=UTF8&iwloc=&output=embed">
-</iframe>
+<section class="section" id="reviews">
+<h2>Patient Reviews</h2>
+<div class="review">⭐⭐⭐⭐⭐ Reliable and professional transportation service.</div>
+<div class="review">⭐⭐⭐⭐⭐ Driver helped my mother safely into the van.</div>
+<div class="review">⭐⭐⭐⭐⭐ Excellent option for dialysis transportation.</div>
+</section>
 
+<section class="section">
+<h2>Instant Trip Estimate</h2>
+<div class="quote-box">
+<p>Enter estimated trip distance (miles).</p>
+<input id="miles" type="number" placeholder="Miles">
+<button onclick="estimateQuote()">Calculate</button>
+<p id="quoteResult"></p>
+</div>
 </section>
 
 <section class="section" id="booking">
-
 <h2>Request Transportation</h2>
-
 <form>
-
 <input type="text" placeholder="Full Name" required>
-
 <input type="tel" placeholder="Phone Number" required>
-
 <input type="text" placeholder="Pickup Address" required>
-
 <input type="text" placeholder="Destination" required>
-
 <input type="date">
-
 <select>
-
 <option>Wheelchair Needed?</option>
 <option>Yes</option>
 <option>No</option>
-
 </select>
-
 <textarea placeholder="Additional notes"></textarea>
-
 <button type="submit">Request Ride</button>
-
 </form>
-
 </section>
 
-<section class="section" id="contact">
-
-<h2>Contact</h2>
-
-<p>Phone: (123) 456-7890</p>
-
-<p>Email: info@eltaitransportservices.com</p>
-
-<p>Serving Snohomish, King and Pierce Counties</p>
-
+<section class="section">
+<h2>Healthcare Facilities We Serve</h2>
+<div class="grid">
+<div class="card">Providence Regional Medical Center Everett</div>
+<div class="card">Swedish Edmonds Campus</div>
+<div class="card">Kaiser Permanente Everett</div>
+<div class="card">EvergreenHealth Monroe</div>
+</div>
 </section>
 
 <footer>
-
 <p>© 2026 El Tai Transport Services</p>
-
-<p>Non Emergency Medical Transportation Washington</p>
-
+<p>Wheelchair & Non‑Emergency Medical Transportation Washington</p>
 </footer>
 
 </body>
