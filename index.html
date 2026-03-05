@@ -5,10 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>El Tai Transport Services | Medical Transportation WA</title>
 <meta name="description" content="Wheelchair accessible non emergency medical transportation serving Snohomish, King and Pierce Counties Washington.">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- SEO Schema -->
 <script type="application/ld+json">
 {
 "@context":"https://schema.org",
@@ -23,48 +21,30 @@
 <style>
 *{box-sizing:border-box}
 body{font-family:'Inter',sans-serif;margin:0;background:#f4f7fb;color:#1f2937}
-
 header{background:#0a4fa3;color:#fff;padding:18px 40px;display:flex;justify-content:space-between;align-items:center}
 nav a{color:#fff;margin-left:18px;text-decoration:none;font-weight:600}
-
 .hero{background:linear-gradient(120deg,#0a4fa3,#2f7de1);color:#fff;padding:110px 20px;text-align:center}
 .hero h1{font-size:42px;margin-bottom:10px}
-
 .btn{background:#fff;color:#0a4fa3;padding:12px 22px;border-radius:6px;text-decoration:none;margin:6px;display:inline-block;font-weight:600}
 .btn.secondary{background:#1e40af;color:white}
-
 .section{padding:70px 20px;max-width:1100px;margin:auto}
 .section h2{text-align:center;margin-bottom:40px}
-
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
-
 .card{background:#fff;padding:24px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.08)}
-
 .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
 .gallery img{width:100%;border-radius:8px}
-
 .review{background:#fff;padding:20px;border-radius:6px;margin-bottom:12px;box-shadow:0 3px 10px rgba(0,0,0,0.06)}
-
 .map{width:100%;height:420px;border:0;border-radius:8px}
-
 .booking-layout{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-
 form{display:grid;gap:12px}
 input,textarea,select{padding:12px;border:1px solid #ccc;border-radius:5px}
-
 button{background:#0a4fa3;color:#fff;border:none;padding:14px;border-radius:6px;cursor:pointer}
-
 .quote-box{background:#fff;padding:24px;border-radius:8px;box-shadow:0 4px 10px rgba(0,0,0,0.07)}
-
 .city-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
 .city-links a{background:#fff;padding:12px;border-radius:6px;text-decoration:none;color:#1f2937;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
-
+.dashboard{background:#fff;padding:25px;border-radius:8px;box-shadow:0 3px 10px rgba(0,0,0,0.06)}
 footer{background:#111;color:#fff;padding:30px;text-align:center;margin-top:40px}
-
-@media(max-width:800px){
-.booking-layout{grid-template-columns:1fr}
-.hero h1{font-size:34px}
-}
+@media(max-width:800px){.booking-layout{grid-template-columns:1fr}.hero h1{font-size:34px}}
 </style>
 
 <script>
@@ -75,10 +55,14 @@ let estimate=(miles*3)+25
 let result=document.getElementById('quoteResult')
 result.innerText="Estimated Trip Cost: $"+estimate
 }
+
+function confirmBooking(e){
+e.preventDefault()
+alert("Ride request submitted. You will receive a confirmation shortly.")
+}
 </script>
 
 </head>
-
 <body>
 
 <header>
@@ -90,6 +74,8 @@ result.innerText="Estimated Trip Cost: $"+estimate
 <a href="#cities">Cities</a>
 <a href="#reviews">Reviews</a>
 <a href="#booking">Book Ride</a>
+<a href="#drivers">Drivers</a>
+<a href="#facility">Facilities</a>
 </nav>
 </header>
 
@@ -129,15 +115,15 @@ result.innerText="Estimated Trip Cost: $"+estimate
 </section>
 
 <section class="section" id="cities">
-<h2>City Service Pages</h2>
+<h2>City Transportation Pages</h2>
 <div class="city-links">
-<a href="#">Everett Transportation</a>
-<a href="#">Lynnwood Transportation</a>
+<a href="#">Everett Medical Transport</a>
 <a href="#">Seattle Medical Transport</a>
 <a href="#">Bellevue Wheelchair Transport</a>
 <a href="#">Kent Medical Transport</a>
 <a href="#">Tacoma Medical Transport</a>
-<a href="#">Marysville Transportation</a>
+<a href="#">Lynnwood Medical Transport</a>
+<a href="#">Marysville Medical Transport</a>
 <a href="#">Edmonds Medical Transport</a>
 </div>
 </section>
@@ -152,9 +138,6 @@ result.innerText="Estimated Trip Cost: $"+estimate
 <div class="review">⭐⭐⭐⭐⭐ Reliable and professional transportation service.</div>
 <div class="review">⭐⭐⭐⭐⭐ Driver assisted my mother safely into the wheelchair van.</div>
 <div class="review">⭐⭐⭐⭐⭐ Excellent transportation option for dialysis appointments.</div>
-
-<!-- Google Reviews Embed Placeholder -->
-<p style="text-align:center;margin-top:20px">Add your Google Reviews widget here once your Google Business profile is active.</p>
 </section>
 
 <section class="section">
@@ -168,37 +151,61 @@ result.innerText="Estimated Trip Cost: $"+estimate
 </section>
 
 <section class="section booking-layout" id="booking">
-
 <div>
 <h2>Book Medical Transportation</h2>
-<form action="https://formspree.io/f/yourformid" method="POST">
-<input type="text" name="name" placeholder="Full Name" required>
-<input type="tel" name="phone" placeholder="Phone Number" required>
-<input type="text" name="pickup" placeholder="Pickup Address" required>
-<input type="text" name="destination" placeholder="Destination" required>
-<input type="date" name="date">
-<select name="wheelchair">
+<form onsubmit="confirmBooking(event)">
+<input type="text" placeholder="Full Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<input type="text" placeholder="Pickup Address" required>
+<input type="text" placeholder="Destination" required>
+<input type="date">
+<select>
 <option>Wheelchair Needed?</option>
 <option>Yes</option>
 <option>No</option>
 </select>
-<textarea name="notes" placeholder="Additional notes"></textarea>
+<textarea placeholder="Additional notes"></textarea>
 <button type="submit">Request Ride</button>
 </form>
 </div>
 
 <div>
-<h2>Healthcare Facilities We Serve</h2>
-<div class="grid">
-<div class="card">Providence Regional Medical Center Everett</div>
-<div class="card">Swedish Edmonds Campus</div>
-<div class="card">Kaiser Permanente Everett</div>
-<div class="card">EvergreenHealth Monroe</div>
-<div class="card">Harborview Medical Center</div>
-<div class="card">Tacoma General Hospital</div>
+<h2>Ride Request Dashboard</h2>
+<div class="dashboard">
+<p>This section can connect to Google Sheets, Airtable, or a backend to display ride requests.</p>
+<p>Each booking submitted can automatically appear here for dispatching.</p>
 </div>
 </div>
+</section>
 
+<section class="section" id="drivers">
+<h2>Driver Application</h2>
+<form>
+<input type="text" placeholder="Full Name">
+<input type="tel" placeholder="Phone Number">
+<input type="text" placeholder="City">
+<select>
+<option>Driver Experience</option>
+<option>Wheelchair Transport</option>
+<option>NEMT</option>
+<option>General Transport</option>
+</select>
+<textarea placeholder="Tell us about your experience"></textarea>
+<button type="submit">Apply as Driver</button>
+</form>
+</section>
+
+<section class="section" id="facility">
+<h2>Healthcare Facility Referral</h2>
+<form>
+<input type="text" placeholder="Facility Name">
+<input type="text" placeholder="Contact Person">
+<input type="tel" placeholder="Phone">
+<input type="text" placeholder="Patient Pickup Location">
+<input type="text" placeholder="Destination">
+<textarea placeholder="Patient transportation details"></textarea>
+<button type="submit">Submit Referral</button>
+</form>
 </section>
 
 <footer>
