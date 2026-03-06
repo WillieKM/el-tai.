@@ -13,7 +13,6 @@ padding:0 20px;
 .site-header{
 background:#0B5C75;
 padding:16px 0;
-border-bottom:2px solid rgba(255,255,255,0.15);
 }
 
 .header-container{
@@ -31,6 +30,44 @@ display:flex;
 align-items:center;
 gap:12px;
 }
+
+.logo-icon{
+font-size:24px;
+color:#F97316;
+}
+
+.logo-main{
+font-size:26px;
+font-weight:700;
+color:white;
+}
+
+.logo-sub{
+font-size:12px;
+letter-spacing:1px;
+color:#F97316;
+}
+
+.nav-menu{
+display:flex;
+align-items:center;
+gap:40px;
+margin-left:auto;
+}
+
+.nav-menu a{
+color:white;
+text-decoration:none;
+font-weight:600;
+font-size:16px;
+}
+
+.book-btn{
+background:#F97316;
+padding:10px 22px;
+border-radius:6px;
+}
+
 
 .logo-icon{
 font-size:24px;
