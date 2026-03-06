@@ -202,3 +202,7 @@ padding:14px 20px;
 border-radius:30px;
 text-decoration:none;
 }
+.about-container{
+max-width:700px;
+line-height:1.7;
+}
