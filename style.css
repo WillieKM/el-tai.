@@ -289,3 +289,67 @@ text-align:center;
 max-width:750px;
 line-height:1.7;
 }
+/* MOBILE RESPONSIVE FIX */
+
+@media (max-width: 768px){
+
+/* header */
+.header-container{
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+/* nav menu */
+.nav-menu{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-top:10px;
+}
+
+/* hero section */
+.hero{
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:28px;
+line-height:1.3;
+}
+
+.hero p{
+font-size:16px;
+}
+
+/* buttons */
+.cta-buttons{
+flex-direction:column;
+align-items:center;
+gap:12px;
+}
+
+/* service cards */
+.grid{
+grid-template-columns:1fr;
+}
+
+/* trust section */
+.trust-grid{
+grid-template-columns:1fr;
+}
+
+/* fleet images */
+.fleet-gallery{
+grid-template-columns:1fr;
+}
+
+/* footer */
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
+gap:25px;
+}
+
+}
