@@ -11,32 +11,38 @@ margin:auto;
 padding:0 20px;
 }
 
-header{
+.site-header{
 background:#0B5C75;
-}
-
-.header-row{
-display:flex;
-justify-content:space-between;
-align-items:center;
 padding:10px 0;
 }
 
-.logo{
-height:80px;
+.header-container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
-nav a{
+.logo{
+height:65px;
+width:auto;
+}
+
+.nav-menu a{
 color:white;
-margin-left:25px;
 text-decoration:none;
+margin-left:30px;
 font-weight:600;
+font-size:16px;
 }
 
 .book-btn{
 background:#F97316;
-padding:8px 16px;
-border-radius:5px;
+padding:10px 18px;
+border-radius:6px;
 }
 
 .hero{
