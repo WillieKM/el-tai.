@@ -20,26 +20,41 @@ height:85px;
 
 nav a{
 color:white;
-margin-left:25px;
+margin-left:28px;
 text-decoration:none;
 font-weight:600;
 font-size:16px;
+letter-spacing:0.5px;
 }
 
+
 .hero{
-background:linear-gradient(rgba(11,92,117,0.6),rgba(249,115,22,0.45)),
+background:
+linear-gradient(rgba(11,92,117,0.55), rgba(11,92,117,0.55)),
 url("images/seattle-hero.jpg");
+
 background-size:cover;
 background-position:center;
+
 color:white;
 text-align:center;
-padding:160px 20px;
+
+padding:170px 20px;
 }
 
 .hero h1{
-font-size:42px;
-margin-bottom:20px;
+font-size:44px;
+margin-bottom:18px;
+font-weight:700;
 }
+
+.hero p{
+font-size:18px;
+max-width:720px;
+margin:auto;
+margin-bottom:22px;
+}
+
 
 .hero p{
 font-size:18px;
