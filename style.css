@@ -18,7 +18,7 @@ align-items:center;
 }
 
 .logo{
-height:160px;
+height:460px;
 width:auto;
 display:block;
 }
@@ -38,8 +38,9 @@ font-size:16px;
 /* HERO */
 
 .hero{
-background:linear-gradient(rgba(11,92,117,0.75),rgba(249,115,22,0.75)),
+background:linear-gradient(rgba(11,92,117,0.6),rgba(249,115,22,0.45)),
 url("images/seattle-hero.jpg");
+}
 
 background-size:cover;
 background-position:center;
