@@ -10,32 +10,48 @@ max-width:1200px;
 margin:auto;
 padding:0 20px;
 }
-
 .site-header{
 background:#0B5C75;
-padding:14px 0;
+padding:16px 0;
 }
 
 .header-container{
 max-width:1200px;
 margin:auto;
-padding:0 20px;
+padding:0 30px;
 
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
 }
 
-.logo{
-height:110px;
-width:auto;
-display:block;
+.logo-text{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo-icon{
+font-size:24px;
+color:#F97316;
+}
+
+.logo-main{
+font-size:26px;
+font-weight:700;
+color:white;
+}
+
+.logo-sub{
+font-size:12px;
+letter-spacing:1px;
+color:#F97316;
 }
 
 .nav-menu{
 display:flex;
 align-items:center;
-gap:30px;
+gap:36px;
 }
 
 .nav-menu a{
@@ -45,9 +61,13 @@ font-weight:600;
 font-size:16px;
 }
 
+.nav-menu a:hover{
+opacity:0.8;
+}
+
 .book-btn{
 background:#F97316;
-padding:10px 20px;
+padding:10px 22px;
 border-radius:6px;
 }
 
