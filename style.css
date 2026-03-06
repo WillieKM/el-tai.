@@ -13,6 +13,7 @@ padding:0 20px;
 .site-header{
 background:#0B5C75;
 padding:16px 0;
+border-bottom:2px solid rgba(255,255,255,0.15);
 }
 
 .header-container{
