@@ -241,7 +241,39 @@ padding:25px;
 border-radius:8px;
 background:#f4f7f9;
 }
+.cta-buttons{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
 
+.btn-call{
+background:#0B5C75;
+color:white;
+padding:12px 24px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-call:hover{
+background:#08495c;
+}
+
+.btn-book{
+background:#ff7a00;
+color:white;
+padding:12px 24px;
+border-radius:6px;
+text-decoration:none;
+font-weight:600;
+}
+
+.btn-book:hover{
+background:#e56e00;
+}
 .trust-item h3{
 color:#0B5C75;
 margin-bottom:10px;
