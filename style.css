@@ -12,14 +12,19 @@ padding:0 20px;
 }
 
 .site-header{
-background:#0B5C75;
-padding:10px 0;
+position:absolute;
+top:0;
+left:0;
+width:100%;
+z-index:1000;
+background:rgba(11,92,117,0.9);
+backdrop-filter:blur(6px);
 }
 
 .header-container{
 max-width:1200px;
 margin:auto;
-padding:0 20px;
+padding:15px 20px;
 
 display:flex;
 justify-content:space-between;
@@ -27,17 +32,24 @@ align-items:center;
 }
 
 .logo{
-height:75px;
+height:70px;
 width:auto;
 }
 
 .nav-menu a{
 color:white;
 text-decoration:none;
-margin-left:30px;
+margin-left:28px;
 font-weight:600;
 font-size:16px;
 }
+
+.book-btn{
+background:#F97316;
+padding:10px 18px;
+border-radius:6px;
+}
+
 
 .book-btn{
 background:#F97316;
