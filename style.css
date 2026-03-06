@@ -246,3 +246,14 @@ background:#f4f7f9;
 color:#0B5C75;
 margin-bottom:10px;
 }
+.page-hero{
+background:#0B5C75;
+color:white;
+padding:120px 20px 80px 20px;
+text-align:center;
+}
+
+.about-content{
+max-width:750px;
+line-height:1.7;
+}
