@@ -166,41 +166,82 @@ Serving Everett, Lynnwood, Seattle, Tacoma and surrounding communities.
 
 </section>
 
-<section class="section" id="booking">
+<section class="booking-section" id="booking">
 
 <div class="container">
 
+<div class="booking-card">
+
+<div class="booking-header">
 <h2>Request Transportation</h2>
+<p>Fill out the form and we'll confirm your ride within 1 hour.</p>
+</div>
 
-<form action="https://formsubmit.co/info@el-taitransportservices.com" method="POST">
+<form class="booking-form" action="https://formsubmit.co/info@el-taitransportservices.com" method="POST">
 
-<input type="text" name="Name" placeholder="Full Name" required>
+<div class="form-row">
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" name="Name" placeholder="Your full name" required>
+</div>
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" name="Phone" placeholder="(000) 000-0000" required>
+</div>
+</div>
 
-<input type="tel" name="Phone" placeholder="Phone Number" required>
+<div class="form-row">
+<div class="form-group">
+<label>Pickup Address</label>
+<input type="text" name="Pickup Location" placeholder="Street address, city" required>
+</div>
+<div class="form-group">
+<label>Destination</label>
+<input type="text" name="Destination" placeholder="Hospital, clinic, or address" required>
+</div>
+</div>
 
-<input type="text" name="Pickup Location" placeholder="Pickup Address" required>
-
-<input type="text" name="Destination" placeholder="Destination" required>
-
+<div class="form-row">
+<div class="form-group">
+<label>Pickup Date</label>
 <input type="date" name="Pickup Date">
+</div>
+<div class="form-group">
+<label>Service Type</label>
+<select name="Service Type">
+<option value="">Select a service</option>
+<option>Wheelchair Transportation</option>
+<option>Dialysis Transportation</option>
+<option>Hospital Discharge</option>
+<option>Doctor Appointment</option>
+<option>Other</option>
+</select>
+</div>
+</div>
 
-<textarea name="Notes" placeholder="Additional notes"></textarea>
+<div class="form-group">
+<label>Additional Notes</label>
+<textarea name="Notes" placeholder="Any special requirements, mobility aids, or other details..." rows="4"></textarea>
+</div>
 
-<input type="hidden" name="_subject" value="New Ride Request">
-
+<input type="hidden" name="_subject" value="New Ride Request — El-Tai Transportation">
 <input type="hidden" name="_captcha" value="false">
 
-<button type="submit">Submit Ride Request</button>
+<button type="submit" class="submit-btn">📅 Submit Ride Request</button>
 
 </form>
+
+<div class="booking-alt">
+<p>Prefer to call? <a href="tel:4694075588">469-407-5588</a> — available daily.</p>
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-<footer>
-
-<<footer class="footer">
+<footer class="footer">
 
 <div class="footer-container">
 
@@ -212,8 +253,8 @@ Serving Everett, Lynnwood, Seattle, Tacoma and surrounding communities.
 
 <p>
 Reliable non-emergency medical transportation
-serving Snohomish County, King County
-and Pierce County Washington.
+serving Snohomish County, King County, Pierce County
+and Thurston County Washington.
 </p>
 
 </div>
@@ -238,10 +279,12 @@ and Pierce County Washington.
 <ul>
 <li>Everett</li>
 <li>Lynnwood</li>
-<li>Seattle</li>
-<li>Tacoma</li>
 <li>Marysville</li>
 <li>Edmonds</li>
+<li>Seattle</li>
+<li>Tacoma</li>
+<li>Olympia</li>
+<li>Lacey</li>
 </ul>
 
 </div>
@@ -251,10 +294,8 @@ and Pierce County Washington.
 <h4>Contact</h4>
 
 <p>📞 469-407-5588</p>
-
-<p>
-✉ info@el-taitransportservices.com
-</p>
+<p>✉ info@el-taitransportservices.com</p>
+<p style="margin-top:12px;"><a href="https://github.com/WillieKM/ElTaiTransportation" target="_blank" rel="noopener noreferrer" style="color:#F97316;">GitHub Repository</a></p>
 
 </div>
 
@@ -271,9 +312,6 @@ website created by cyber-node.com
 </div>
 
 </div>
-
-</footer>
-
 
 </footer>
 
